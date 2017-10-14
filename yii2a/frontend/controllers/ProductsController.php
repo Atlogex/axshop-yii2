@@ -3,8 +3,8 @@
 namespace frontend\controllers;
 
 use Yii;
-use app\models\Users;
-use frontend\models\UsersSearch;
+use app\models\Products;
+//use frontend\models\UsersSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -12,7 +12,7 @@ use yii\filters\VerbFilter;
 /**
  * UsersController implements the CRUD actions for Users model.
  */
-class UsersController extends Controller
+class ProductsController extends Controller
 {
 	/**
 	 * @inheritdoc
@@ -35,7 +35,7 @@ class UsersController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$searchModel = new UsersSearch();
+		$searchModel = new ProductsSearch();
 		$dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
 		return $this->render('index', [

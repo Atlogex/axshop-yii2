@@ -12,14 +12,14 @@ use Yii;
  * @property integer $userEmail
  * @property integer $userPassword
  */
-class Users extends \yii\db\ActiveRecord
+class Products extends \yii\db\ActiveRecord
 {
 	/**
 	 * @inheritdoc
 	 */
 	public static function tableName()
 	{
-		return '{{%users}}';
+		return '{{%product}}';
 	}
 
 	/**
@@ -28,9 +28,9 @@ class Users extends \yii\db\ActiveRecord
 	public function rules()
 	{
 		return [
-			[['userId', 'userName', 'userEmail', 'userPassword'], 'required'],
-			[['userId'], 'integer'],
-			[['userName', 'userEmail', 'userPassword'], 'string'],
+			[['productId', 'name', 'title'], 'required'],
+			[['productId'], 'integer'],
+			[['productName', 'productTitle', 'productDescriptionShort'], 'string'],
 		];
 	}
 
@@ -40,10 +40,10 @@ class Users extends \yii\db\ActiveRecord
 	public function attributeLabels()
 	{
 		return [
-			'userId' => 'User ID',
-			'userName' => 'User Name',
-			'userEmail' => 'User Email',
-			'userPassword' => 'User Password',
+			'productId' => 'User ID',
+			'productName' => 'User Name',
+			'productTitle' => 'User Email',
+			'productDescriptionShort' => 'User Password',
 		];
 	}
 
