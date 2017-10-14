@@ -29,7 +29,8 @@ class Users extends \yii\db\ActiveRecord
     {
         return [
             [['userId', 'userName', 'userEmail', 'userPassword'], 'required'],
-            [['userId', 'userName', 'userEmail', 'userPassword'], 'integer'],
+            [['userId'], 'integer'],
+            [['userName', 'userEmail', 'userPassword'], 'string'],
         ];
     }
 
