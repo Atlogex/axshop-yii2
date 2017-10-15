@@ -4,9 +4,10 @@ namespace frontend\controllers;
 
 use yii\web\Controller;
 use yii\data\Pagination;
-use frontend\models\OrderList;
-var_dump(1);
-class OrderListController extends Controller
+use app\models\OrderList;
+
+
+class OrderlistController extends Controller
 {
 	public function actionIndex()
 	{
