@@ -16,5 +16,5 @@ $this->params['breadcrumbs'][] = $this->title;
 	<code><?= __FILE__ ?></code>
 
 <!--	--><?//= Productlast::run(['cat' => 'tv']) ?>
-	<?= Productlast::run() ?>
+	<?= Productlast::widget() ?>
 </div>

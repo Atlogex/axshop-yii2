@@ -7,11 +7,15 @@ return [
 		],
 		'view' => [
 			'theme' => [
-				'basePath' => '@frontend/themes/axy2shop',
-				'baseUrl' => '@frontend/themes/axy2shop',
+				'basePath' => '@app/themes/axy2shop',
+				'baseUrl' => '@app/themes/axy2shop',
 				'pathMap' => [
 					'@app/views' => '@frontend/themes/axy2shop',
-					'@app/widgets' => '@frontend/themes/axy2shop/widgets',
+					'@app/modules' => '@frontend/themes/axy2shop/modules',
+					'@common/widgets' => '@frontend/themes/axy2shop/widgets',// <-- !!!
+					'@app/widgets' => '@frontend/themes/axy2shop/widgets',// <-- !!!
+//					'@app/widgets' => '@app/themes/axy2shop/widgets',
+//					'@app/views/widgets' => '@frontend/themes/axy2shop/widgets',
 				],
 			],
 		],
