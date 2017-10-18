@@ -11,8 +11,8 @@ return [
 				'baseUrl' => '@frontend/themes/axy2shop',
 				'pathMap' => [
 					'@app/views' => '@frontend/themes/axy2shop',
+					'@app/widgets' => '@frontend/themes/axy2shop/widgets',
 				],
-				'WidgetPath' => '@frontend/themes/axy2shop/widget',
 			],
 		],
 	],
