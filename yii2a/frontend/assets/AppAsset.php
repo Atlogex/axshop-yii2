@@ -9,17 +9,18 @@ use yii\web\AssetBundle;
  */
 class AppAsset extends AssetBundle
 {
-    public $sourcePath = '@app/themes/axy2shop/assets/';
+	public $sourcePath = '@app/themes/axy2shop/assets/';
 //    public $sourcePath = '@webroot/css';
 //    public $basePath = '@webroot/css';
 //    public $baseUrl = '@web';
-    public $css = [
-        'site.css',
-    ];
-    public $js = [
-    ];
-    public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
-    ];
+	public $css = [
+		'site.css',
+	];
+	public $js = [
+		'js/main.js',
+	];
+	public $depends = [
+		'yii\web\YiiAsset',
+		'yii\bootstrap\BootstrapAsset',
+	];
 }
