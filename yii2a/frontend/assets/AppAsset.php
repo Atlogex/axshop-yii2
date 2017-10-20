@@ -9,10 +9,12 @@ use yii\web\AssetBundle;
  */
 class AppAsset extends AssetBundle
 {
-    public $basePath = '@webroot';
-    public $baseUrl = '@web';
+    public $sourcePath = '@app/themes/axy2shop/assets/';
+//    public $sourcePath = '@webroot/css';
+//    public $basePath = '@webroot/css';
+//    public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
+        'site.css',
     ];
     public $js = [
     ];

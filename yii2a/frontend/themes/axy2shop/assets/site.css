@@ -29,8 +29,7 @@ body {
 .jumbotron .btn {
     font-size: 21px;
     padding: 14px 24px;
-    background-color: #222222;
-    background-color: #222222;
+    background-color: #1fd2ff !important;
 }
 
 .not-set {
