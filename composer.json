@@ -1,0 +1,38 @@
+{
+  "name": "Atlogex Yii2Shop",
+  "description": "Yii 2 Advanced Project Template",
+  "keywords": ["yii2", "framework", "advanced", "project template"],
+  "homepage": "http://www.atlogex.com/",
+  "type": "project",
+  "license": "GPL",
+  "support": {
+    "issues": "https://github.com/atlogex/YiiAxShop-1/issues?state=open",
+    "source": "https://github.com/atlogex/YiiAxShop-1"
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "~2.0.6",
+    "yiisoft/yii2-bootstrap": "~2.0.0",
+    "yiisoft/yii2-swiftmailer": "~2.0.0",
+    "yiisoft/yii2-imagine": "~2.0.0"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "~2.0.0",
+    "yiisoft/yii2-gii": "~2.0.0",
+    "yiisoft/yii2-faker": "~2.0.0",
+
+    "codeception/base": "^2.2.3",
+    "codeception/verify": "~0.3.1"
+  },
+  "config": {
+    "vendor-dir": "yii2a/vendor",
+    "process-timeout": 1800,
+    "fxp-asset":{
+      "installer-paths": {
+        "npm-asset-library": "yii2a/vendor/npm",
+        "bower-asset-library": "yii2a/vendor/bower"
+      }
+    }
+  }
+}
